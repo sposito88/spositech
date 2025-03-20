@@ -19,7 +19,7 @@ Sistema web moderno para suporte técnico, atendimento ao cliente e gerenciament
 Clone o repositório e instale as dependências:
 
 ```bash
-git clone https://github.com/seu-usuario/spositech.git
+git clone https://github.com/sposito88/spositech.git
 cd spositech
 npm install
 
