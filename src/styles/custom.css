@@ -1,0 +1,16 @@
+/* Estilos personalizados adicionais */
+
+/* Ocultar elementos de debug do Socket.IO */
+div[style*="position: fixed"][style*="bottom: 0"],
+div[style*="position:fixed"][style*="bottom:0"],
+div[style*="color:green"]:not(.chat-window):not(.chat-button),
+[class*="socket-"],
+[id*="socket-"] {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  height: 0 !important;
+  width: 0 !important;
+  overflow: hidden !important;
+} 

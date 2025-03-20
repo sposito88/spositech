@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400" fill="none">
+  <style>
+    .primary { fill: #0a8043; }
+    .accent { fill: #39ff14; }
+    .dark { fill: #1e1e1e; }
+    .light { fill: #f0f9f1; }
+    .secondary { fill: #6c757d; }
+    .white { fill: #ffffff; }
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0px); }
+    }
+    @keyframes pulse {
+      0% { opacity: 0.7; }
+      50% { opacity: 1; }
+      100% { opacity: 0.7; }
+    }
+    @keyframes glow {
+      0% { filter: drop-shadow(0 0 2px rgba(57, 255, 20, 0.7)); }
+      50% { filter: drop-shadow(0 0 8px rgba(57, 255, 20, 0.9)); }
+      100% { filter: drop-shadow(0 0 2px rgba(57, 255, 20, 0.7)); }
+    }
+    .float {
+      animation: float 3s ease-in-out infinite;
+    }
+    .pulse {
+      animation: pulse 2s ease-in-out infinite;
+    }
+    .glow {
+      animation: glow 2s ease-in-out infinite;
+    }
+  </style>
+  
+  <!-- Background Elements -->
+  <circle cx="300" cy="200" r="150" fill="#1e1e1e" opacity="0.3" />
+  <circle cx="300" cy="200" r="100" fill="#1e1e1e" opacity="0.5" />
+  
+  <!-- Team Illustration -->
+  <g class="float">
+    <!-- Person 1 -->
+    <circle cx="200" cy="180" r="40" class="primary" stroke="#39ff14" stroke-width="1" />
+    <circle cx="200" cy="150" r="20" class="dark" stroke="#39ff14" stroke-width="1" />
+    <rect x="180" y="180" width="40" height="60" rx="10" class="primary" stroke="#39ff14" stroke-width="1" />
+    
+    <!-- Person 2 -->
+    <circle cx="300" cy="180" r="40" class="primary" stroke="#39ff14" stroke-width="1" />
+    <circle cx="300" cy="150" r="20" class="dark" stroke="#39ff14" stroke-width="1" />
+    <rect x="280" y="180" width="40" height="60" rx="10" class="primary" stroke="#39ff14" stroke-width="1" />
+    
+    <!-- Person 3 -->
+    <circle cx="400" cy="180" r="40" class="primary" stroke="#39ff14" stroke-width="1" />
+    <circle cx="400" cy="150" r="20" class="dark" stroke="#39ff14" stroke-width="1" />
+    <rect x="380" y="180" width="40" height="60" rx="10" class="primary" stroke="#39ff14" stroke-width="1" />
+    
+    <!-- Connection Lines -->
+    <line x1="240" y1="200" x2="260" y2="200" stroke="#39ff14" stroke-width="3" class="glow" />
+    <line x1="340" y1="200" x2="360" y2="200" stroke="#39ff14" stroke-width="3" class="glow" style="animation-delay: 0.5s" />
+  </g>
+  
+  <!-- Tech Icons -->
+  <g class="float" style="animation-delay: 0.7s">
+    <!-- Gear Icon -->
+    <circle cx="150" cy="280" r="25" class="dark" stroke="#39ff14" stroke-width="1" />
+    <circle cx="150" cy="280" r="15" class="dark" stroke="#39ff14" stroke-width="1" />
+    <circle cx="150" cy="280" r="5" class="accent glow" />
+    
+    <!-- Code Icon -->
+    <rect x="280" y="260" width="40" height="40" rx="5" class="dark" stroke="#39ff14" stroke-width="1" />
+    <rect x="290" y="270" width="20" height="5" class="accent glow" />
+    <rect x="290" y="280" width="15" height="5" class="accent glow" style="animation-delay: 0.3s" />
+    <rect x="290" y="290" width="25" height="5" class="accent glow" style="animation-delay: 0.6s" />
+    
+    <!-- Cloud Icon -->
+    <circle cx="400" cy="280" r="20" class="dark" stroke="#39ff14" stroke-width="1" />
+    <circle cx="420" cy="270" r="15" class="dark" stroke="#39ff14" stroke-width="1" />
+    <circle cx="440" cy="280" r="20" class="dark" stroke="#39ff14" stroke-width="1" />
+    <rect x="400" y="280" width="40" height="20" class="dark" stroke="#39ff14" stroke-width="1" />
+    <circle cx="420" cy="275" r="5" class="accent glow" style="animation-delay: 0.9s" />
+  </g>
+  
+  <!-- Company Name -->
+  <g transform="translate(230, 340)">
+    <text font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#0a8043">
+      <tspan x="0" y="0">Sposi</tspan>
+      <tspan x="70" y="0" fill="#39ff14" class="glow">Tech</tspan>
+    </text>
+  </g>
+</svg> 

@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#121212;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e1e1e;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="600" height="400" fill="url(#grad1)" />
+  
+  <!-- Grid pattern -->
+  <g stroke="#39ff14" stroke-width="0.5" stroke-opacity="0.1">
+    <path d="M0,100 L600,100" />
+    <path d="M0,200 L600,200" />
+    <path d="M0,300 L600,300" />
+    
+    <path d="M100,0 L100,400" />
+    <path d="M200,0 L200,400" />
+    <path d="M300,0 L300,400" />
+    <path d="M400,0 L400,400" />
+    <path d="M500,0 L500,400" />
+  </g>
+  
+  <!-- Project placeholder elements -->
+  <g>
+    <!-- Central icon -->
+    <circle cx="300" cy="200" r="80" fill="none" stroke="#39ff14" stroke-width="2" stroke-opacity="0.3" />
+    <circle cx="300" cy="200" r="60" fill="none" stroke="#39ff14" stroke-width="1" stroke-opacity="0.5" />
+    
+    <!-- Code brackets -->
+    <path d="M260,170 L240,200 L260,230" stroke="#39ff14" stroke-width="3" stroke-opacity="0.7" fill="none" />
+    <path d="M340,170 L360,200 L340,230" stroke="#39ff14" stroke-width="3" stroke-opacity="0.7" fill="none" />
+    
+    <!-- Dots -->
+    <circle cx="300" cy="170" r="5" fill="#39ff14" fill-opacity="0.8" filter="url(#glow)" />
+    <circle cx="300" cy="200" r="5" fill="#39ff14" fill-opacity="0.8" filter="url(#glow)" />
+    <circle cx="300" cy="230" r="5" fill="#39ff14" fill-opacity="0.8" filter="url(#glow)" />
+  </g>
+  
+  <!-- Text -->
+  <g font-family="Arial, sans-serif" text-anchor="middle">
+    <text x="300" y="320" fill="#ffffff" font-size="16" font-weight="bold">PROJETO</text>
+    <text x="300" y="345" fill="#39ff14" font-size="14" opacity="0.7">SPOSITECH</text>
+  </g>
+  
+  <!-- Decorative elements -->
+  <g>
+    <circle cx="150" cy="100" r="20" fill="none" stroke="#39ff14" stroke-width="1" stroke-opacity="0.2" />
+    <circle cx="450" cy="300" r="25" fill="none" stroke="#39ff14" stroke-width="1" stroke-opacity="0.2" />
+    
+    <path d="M100,350 L150,350 L150,300" stroke="#39ff14" stroke-width="1" stroke-opacity="0.3" fill="none" />
+    <path d="M500,50 L450,50 L450,100" stroke="#39ff14" stroke-width="1" stroke-opacity="0.3" fill="none" />
+    
+    <circle cx="100" cy="350" r="3" fill="#39ff14" fill-opacity="0.5" filter="url(#glow)" />
+    <circle cx="150" cy="300" r="3" fill="#39ff14" fill-opacity="0.5" filter="url(#glow)" />
+    <circle cx="500" cy="50" r="3" fill="#39ff14" fill-opacity="0.5" filter="url(#glow)" />
+    <circle cx="450" cy="100" r="3" fill="#39ff14" fill-opacity="0.5" filter="url(#glow)" />
+  </g>
+</svg> 

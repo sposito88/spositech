@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400" fill="none">
+  <style>
+    .primary { fill: #0a8043; }
+    .accent { fill: #39ff14; }
+    .dark { fill: #1e1e1e; }
+    .light { fill: #f0f9f1; }
+    .secondary { fill: #6c757d; }
+    .white { fill: #ffffff; }
+    .screen { fill: #121212; }
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0px); }
+    }
+    @keyframes pulse {
+      0% { opacity: 0.7; }
+      50% { opacity: 1; }
+      100% { opacity: 0.7; }
+    }
+    @keyframes glow {
+      0% { filter: drop-shadow(0 0 2px rgba(57, 255, 20, 0.7)); }
+      50% { filter: drop-shadow(0 0 8px rgba(57, 255, 20, 0.9)); }
+      100% { filter: drop-shadow(0 0 2px rgba(57, 255, 20, 0.7)); }
+    }
+    .float {
+      animation: float 3s ease-in-out infinite;
+    }
+    .pulse {
+      animation: pulse 2s ease-in-out infinite;
+    }
+    .glow {
+      animation: glow 2s ease-in-out infinite;
+    }
+  </style>
+  
+  <!-- Background Elements -->
+  <circle cx="300" cy="200" r="150" fill="#1e1e1e" opacity="0.3" />
+  <circle cx="300" cy="200" r="100" fill="#1e1e1e" opacity="0.5" />
+  
+  <!-- Computer -->
+  <g class="float">
+    <rect x="200" y="150" width="200" height="140" rx="5" class="dark" stroke="#39ff14" stroke-width="1" />
+    <rect x="210" y="160" width="180" height="110" class="screen" />
+    
+    <!-- Code on Screen -->
+    <rect x="220" y="170" width="100" height="5" class="primary" opacity="0.7" />
+    <rect x="220" y="180" width="80" height="5" class="primary" opacity="0.7" />
+    <rect x="220" y="190" width="120" height="5" class="primary" opacity="0.7" />
+    <rect x="220" y="200" width="90" height="5" class="accent" opacity="0.7" class="glow" />
+    <rect x="220" y="210" width="110" height="5" class="primary" opacity="0.7" />
+    <rect x="220" y="220" width="70" height="5" class="accent" opacity="0.7" class="glow" />
+    <rect x="220" y="230" width="100" height="5" class="primary" opacity="0.7" />
+    <rect x="220" y="240" width="130" height="5" class="primary" opacity="0.7" />
+    
+    <!-- Computer Stand -->
+    <rect x="280" y="290" width="40" height="10" class="dark" stroke="#39ff14" stroke-width="1" />
+    <rect x="270" y="300" width="60" height="5" class="dark" stroke="#39ff14" stroke-width="1" />
+  </g>
+  
+  <!-- Server Rack -->
+  <g transform="translate(420, 180)" class="float" style="animation-delay: 0.5s">
+    <rect x="0" y="0" width="60" height="100" class="dark" stroke="#39ff14" stroke-width="1" />
+    <rect x="5" y="10" width="50" height="15" class="primary" />
+    <rect x="5" y="30" width="50" height="15" class="primary" />
+    <rect x="5" y="50" width="50" height="15" class="primary" />
+    <rect x="5" y="70" width="50" height="15" class="primary" />
+    
+    <!-- Server Lights -->
+    <circle cx="10" cy="17" r="2" class="accent glow" />
+    <circle cx="10" cy="37" r="2" class="accent glow" style="animation-delay: 0.3s" />
+    <circle cx="10" cy="57" r="2" class="accent glow" style="animation-delay: 0.6s" />
+    <circle cx="10" cy="77" r="2" class="accent glow" style="animation-delay: 0.9s" />
+  </g>
+  
+  <!-- Mobile Device -->
+  <g transform="translate(150, 200)" class="float" style="animation-delay: 1s">
+    <rect x="0" y="0" width="40" height="70" rx="5" class="dark" stroke="#39ff14" stroke-width="1" />
+    <rect x="5" y="10" width="30" height="50" class="screen" />
+    
+    <!-- App Icons -->
+    <rect x="10" y="15" width="8" height="8" rx="2" class="primary" />
+    <rect x="22" y="15" width="8" height="8" rx="2" class="accent" class="glow" />
+    <rect x="10" y="27" width="8" height="8" rx="2" class="accent" class="glow" />
+    <rect x="22" y="27" width="8" height="8" rx="2" class="primary" />
+    <rect x="10" y="39" width="8" height="8" rx="2" class="primary" />
+    <rect x="22" y="39" width="8" height="8" rx="2" class="accent" class="glow" />
+    
+    <!-- Home Button -->
+    <circle cx="20" cy="65" r="3" class="accent" />
+  </g>
+  
+  <!-- Connection Lines -->
+  <path d="M250 200 C 270 180, 280 190, 300 200" stroke="#39ff14" stroke-width="2" stroke-dasharray="5,5" class="glow" />
+  <path d="M350 200 C 370 180, 390 190, 420 200" stroke="#39ff14" stroke-width="2" stroke-dasharray="5,5" class="glow" style="animation-delay: 0.5s" />
+  <path d="M190 220 C 210 210, 230 210, 250 220" stroke="#39ff14" stroke-width="2" stroke-dasharray="5,5" class="glow" style="animation-delay: 1s" />
+</svg> 

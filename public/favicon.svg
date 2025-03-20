@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .mascote-bg {
+        fill: #121212;
+      }
+      .mascote-border {
+        fill: none;
+        stroke: #39ff14;
+        stroke-width: 2;
+        filter: drop-shadow(0 0 3px rgba(57, 255, 20, 0.8));
+      }
+      .mascote-letter {
+        fill: #39ff14;
+        font-family: Arial, sans-serif;
+        font-weight: bold;
+        font-size: 16px;
+        text-anchor: middle;
+        dominant-baseline: middle;
+        filter: drop-shadow(0 0 2px rgba(57, 255, 20, 0.8));
+      }
+    </style>
+  </defs>
+  <circle class="mascote-bg" cx="16" cy="16" r="15" />
+  <circle class="mascote-border" cx="16" cy="16" r="14" />
+  <text class="mascote-letter" x="16" y="16">S</text>
+  <text class="mascote-letter" x="21" y="20" font-size="10">T</text>
+</svg> 
